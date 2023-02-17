@@ -1,4 +1,4 @@
-module "elb_http" {
+module "elb_module" {
     source  = "terraform-aws-modules/elb/aws"
     version = "~> 2.0"
 
