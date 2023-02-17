@@ -4,7 +4,7 @@ module "elb_module" {
 
     name = "elb-example"
 
-    subnets         = [ var.vpc_public_subnets[0], var.vpc_public_subnets[1]]
+    subnets         = [ module.vpc.public_subnets[0], module.vpc.public_subnets[1]]
     security_groups = [module.sg_elb.security_group_id]
     internal        = false
 
